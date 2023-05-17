@@ -226,12 +226,45 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "c630d175-91f7-488d-a74f-3eb07d3b9c72": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17110672277824__c630d175-91f7-488d-a74f-3eb07d3b9c72-16843547008225edc0-0": {
+          "type": "collapsible_row",
+          "repeater": "{{ product.metafields.custom.tabs.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.headline.value }}",
+            "icon": "check_mark",
+            "row_content": "{{ block.repeater.content | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17110672277824__c630d175-91f7-488d-a74f-3eb07d3b9c72-16843547008225edc0-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "c630d175-91f7-488d-a74f-3eb07d3b9c72"
   ]
 }
